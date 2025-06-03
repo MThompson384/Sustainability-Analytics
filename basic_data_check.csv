@@ -1,0 +1,7 @@
+production_name,date_recorded,equipment_type,fuel_type,gallons_consumed,hours_operated
+"Sunset Boulevard Revival",2025-06-02,Vehicle,Gasoline,45.20,8.00
+"Tech Titans S3",2025-06-02,Generator,Diesel,2470.00,12.00
+"Ocean Depths",2025-06-02,Generator,Diesel,189.45,14.00
+"Sunset Boulevard Revival",2025-06-01,Generator,Diesel,247.50,12.50
+"Tech Titans S3",2025-06-01,"Lighting Truck",Diesel,156.75,10.50
+"Ocean Depths",2025-06-01,Vehicle,Gasoline,67.30,6.50
