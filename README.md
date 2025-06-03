@@ -41,8 +41,8 @@ This isn't just another data visualization project. I designed it specifically f
 ## What You'll Find
 
 ### Main Dashboard
-!(https://github.com/user-attachments/assets/4b643c2b-0023-4a18-bb4e-9c87d84dd409)
- - how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
+
+Main Dashboard.png - how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
 
 ### Data Quality Control
 This is where the magic happens. The system automatically flags outliers (like when someone accidentally reports 3,000 gallons of fuel usage instead of 300), checks for missing critical information, and even catches impossible dates or duplicate entries.
