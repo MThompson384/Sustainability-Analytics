@@ -1,4 +1,4 @@
--- 1.1 Corrected MySQL Database Schema --
+-- 1.1 MySQL Database Schema --
 
 -- Creating Database --
 CREATE DATABASE Production_Sustain;
