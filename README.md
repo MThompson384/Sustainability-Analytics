@@ -36,24 +36,31 @@ This isn't just another data visualization project. I designed it specifically f
 
 ## 🚀 See It In Action
 
-**[Try the live demo here →](https://sustainability-analytics-dashboard.streamlit.app/)**
+**[Try the live demo here](https://sustainability-analytics-dashboard.streamlit.app/)**
 
 ## What You'll Find
 
-### Main Dashboard
-
 ![Dashboard Overview](main-dashboard.png)
 
-- how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
+### Main Dashboard
+Shows the big picture - how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
+
+![Data Quality Control](data-quality-control.png)
 
 ### Data Quality Control
 This is where the magic happens. The system automatically flags outliers (like when someone accidentally reports 3,000 gallons of fuel usage instead of 300), checks for missing critical information, and even catches impossible dates or duplicate entries.
 
+![Environmental Impact Analysis](carbon-footprint.png)
+
 ### Environmental Impact Analysis
 Breaks down carbon emissions by fuel type and production, converts gallons to CO2 equivalents, and shows the environmental impact in terms people actually understand (like "equivalent to taking 15 cars off the road").
 
+![Cost Analysis](cost-analysis.png)
+
 ### Cost Analysis
 Identifies where money is being spent, compares actual costs to targets, and highlights specific opportunities for savings. I included ROI calculations for potential efficiency improvements.
+
+![Training Materials](training-materials.png)
 
 ### Training Materials
 Interactive guides that teach users how to enter data correctly, with real-time quizzes and reference materials. Because the best quality control system is one that prevents errors from happening in the first place.
