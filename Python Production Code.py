@@ -100,12 +100,12 @@ class DataQualityController:
         
 # 2.2 Automated Data Pipeline
 
-import sqlalchemy
+# import sqlalchemy  # Not needed for demo version
 from datetime import datetime
 
 class SustainabilityPipeline:
-    def __init__(self, db_url):
-        self.engine = sqlalchemy.create_engine(db_url) if db_url else None
+    def __init__(self, db_url=None):
+        self.engine = None  # Using sample data only
         self.quality_controller = DataQualityController(self.engine)
     
     def daily_data_refresh(self):
