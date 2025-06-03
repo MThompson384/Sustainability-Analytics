@@ -29,14 +29,41 @@ This isn't just another data visualization project. I designed it specifically f
 
 ## 🛠️ How I Built It
 
-**Backend**: Python handles all the heavy lifting - data validation, statistical analysis, and calculations  
-**Frontend**: Streamlit creates an intuitive interface that anyone can use  
-**Database**: MySQL stores production data with proper relationships and constraints  
-**Visualization**: Plotly makes the charts interactive and engaging  
+**Backend**: Python handles all the heavy lifting - data validation, statistical analysis, and calculations
+**Frontend**: Streamlit creates an intuitive interface that anyone can use
+**Database**: MySQL stores production data with proper relationships and constraints
+**Visualization**: Plotly makes the charts interactive and engaging
 
 ## 🚀 See It In Action
 
 **[Try the live demo here](https://sustainability-analytics-dashboard.streamlit.app/)**
+
+## 🗄️ Database & Analytics
+
+### MySQL Database Structure
+The project uses a **normalized MySQL database** with three main tables that work together to track production sustainability data:
+
+- **Productions Table**: Stores information about each film/TV show including name, type, location, and filming dates
+- **Fuel Consumption Table**: Records daily fuel usage data with equipment details, consumption amounts, and validation status
+- **Data Quality Log**: Tracks all quality issues found in the data with severity levels and resolution status
+
+The database uses **proper foreign key relationships** and **built-in constraints** to maintain data integrity while supporting real-time analytics queries.
+
+### Key Analytics Outputs
+
+#### Basic Data Check (basic_data_check.csv)
+Overview of recent fuel consumption across all productions, showing production names, dates, equipment types, fuel types, and consumption amounts. This provides a quick snapshot of daily operations and helps identify patterns in fuel usage across different types of equipment and productions.
+
+#### Data Quality Outlier Detection (quality_outliers.csv)
+Results from automated quality control scans that identify suspicious data entries. Flags records with unusually high fuel consumption (like the 2,470-gallon outlier), impossible operating hours, or other data integrity issues that need human review.
+
+#### Monthly Summary (monthly_summary.csv)
+Aggregated monthly data showing total fuel consumption, calculated carbon emissions, and data quality scores for each production. This executive-level view helps track sustainability progress and identifies which productions are meeting environmental targets.
+
+#### Production Rankings by Emissions (production_rankings.csv)
+Comparative analysis ranking all productions by their total carbon footprint. Shows which shows/movies have the highest environmental impact and helps production companies prioritize sustainability initiatives where they'll have the most effect.
+
+Each CSV file represents the output of **complex SQL queries** that demonstrate advanced analytics capabilities including statistical analysis, data quality assessment, and business intelligence reporting.
 
 ## What You'll Find
 
@@ -85,14 +112,11 @@ The system knows that generators can't run more than 24 hours in a day, fuel con
 ### Performance Optimization
 Built to handle thousands of records without breaking a sweat. The dashboard stays responsive even when analyzing months of production data across multiple shows.
 
-## Why I Built This
-
-I wanted to create something that solves real problems in the entertainment industry while showcasing advanced data analysis skills. This project demonstrates:
-
-- **Data pipeline architecture** - from raw input to polished reports
-- **Quality control systems** - catching errors before they become expensive problems  
-- **Stakeholder communication** - making complex data accessible to everyone
-- **Business impact focus** - every feature ties to actual cost savings or compliance needs
+### Database Architecture
+- **Normalized design** with proper foreign key relationships
+- **Data quality constraints** built into table structure  
+- **Optimized for analytics** with efficient indexing
+- **Audit trails** for all data quality issues
 
 ## Getting Started
 
@@ -108,25 +132,3 @@ pip install -r requirements.txt
 
 # Fire it up
 streamlit run dashboard.py
-```
-
-It runs with sample data by default, so you can explore all the features without setting up a database.
-
-## What's Next
-
-I'm considering adding:
-- Machine learning to predict equipment failure and optimize maintenance schedules
-- Mobile app for field crews to input data on location
-- Integration with popular production management software
-- Advanced forecasting for budget planning
-
-## Behind the Scenes
-
-This project represents about 40 hours of development time, from initial research on film production workflows to final deployment. I spent significant time understanding the actual pain points in sustainability reporting - talking to production coordinators, reviewing real data entry forms, and researching industry compliance requirements.
-
-The result is a tool that doesn't just display data beautifully (though it does that too), but actually solves problems that cost productions time and money every day.
-
----
-
-Built with ❤️ for the entertainment industry  
-Questions? Reach out at [(https://www.linkedin.com/in/micah-thompson-/)]
