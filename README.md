@@ -43,7 +43,7 @@ This isn't just another data visualization project. I designed it specifically f
 ![Dashboard Overview](main-dashboard.png)
 
 ### Main Dashboard
-- how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
+Shows the big picture - how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
 
 ![Data Quality Control](data-quality-control.png)
 
