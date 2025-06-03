@@ -1,0 +1,2 @@
+record_id,production_name,gallons_consumed,hours_operated,quality_flag
+4,"Tech Titans S3",2470.00,12.00,"High Fuel Outlier"
