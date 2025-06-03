@@ -8,7 +8,7 @@ USE Production_Sustain;
 
 -- Create Production Table --
 CREATE TABLE Productions(
-    production_id INT AUTO_INCREMENT PRIMARY KEY,  -- Changed from SERIAL
+    production_id INT AUTO_INCREMENT PRIMARY KEY,  
     production_name VARCHAR(255) NOT NULL,
     production_type VARCHAR(50),    -- Film, TV Series, Documentary --
     start_date DATE,
@@ -18,8 +18,8 @@ CREATE TABLE Productions(
 );
 
 -- Creating Fuel Consumption Tracking (Fixed table name) --
-CREATE TABLE Fuel_Consumption(  -- Fixed: removed extra underscore
-    record_id INT AUTO_INCREMENT PRIMARY KEY,  -- Changed from SERIAL
+CREATE TABLE Fuel_Consumption(  
+    record_id INT AUTO_INCREMENT PRIMARY KEY,  
     production_id INT,
     date_recorded DATE NOT NULL,
     equipment_type VARCHAR(100), -- Generator, Vehicle, Lighting --
@@ -36,7 +36,7 @@ CREATE TABLE Fuel_Consumption(  -- Fixed: removed extra underscore
 
 -- Creating Data Quality Tracking --
 CREATE TABLE Data_Quality_Log(
-    log_id INT AUTO_INCREMENT PRIMARY KEY,  -- Changed from SERIAL
+    log_id INT AUTO_INCREMENT PRIMARY KEY, 
     table_name VARCHAR(100),
     record_id INT, 
     issue_type VARCHAR(100),
