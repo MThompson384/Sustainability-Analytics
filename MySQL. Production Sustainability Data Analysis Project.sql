@@ -17,7 +17,7 @@ CREATE TABLE Productions(
     status VARCHAR(50) DEFAULT 'Active'
 );
 
--- Creating Fuel Consumption Tracking (Fixed table name) --
+-- Creating Fuel Consumption Tracking --
 CREATE TABLE Fuel_Consumption(  
     record_id INT AUTO_INCREMENT PRIMARY KEY,  
     production_id INT,
