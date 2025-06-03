@@ -36,13 +36,15 @@ This isn't just another data visualization project. I designed it specifically f
 
 ## 🚀 See It In Action
 
-**[Try the live demo here →]((https://sustainability-analytics-dashboard.streamlit.app/))**
+**[Try the live demo here →](https://sustainability-analytics-dashboard.streamlit.app/)**
 
 ## What You'll Find
 
 ### Main Dashboard
 
-Main Dashboard.png - how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
+![Dashboard Overview](main-dashboard.png)
+
+- how many productions are active, total carbon savings, cost reductions, and data quality scores. I included trend charts that make it easy to spot patterns over time.
 
 ### Data Quality Control
 This is where the magic happens. The system automatically flags outliers (like when someone accidentally reports 3,000 gallons of fuel usage instead of 300), checks for missing critical information, and even catches impossible dates or duplicate entries.
