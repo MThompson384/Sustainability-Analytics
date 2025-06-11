@@ -22,7 +22,8 @@ I created a dashboard that automatically:
 - **Identifies cost savings** through pattern analysis and efficiency recommendations
 - **Trains users** with interactive guides and real-time feedback
 
-**[🌐 Try the live demo here](https://sustainability-analytics-dashboard.streamlit.app/)**
+## **[🌐 Try the live demo here](https://sustainability-analytics-dashboard.streamlit.app/)**
+
 *No setup required - I made it easy to explore with realistic sample data*
 
 ## 💡 What Made This Project Special
